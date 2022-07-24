@@ -5,7 +5,7 @@ alias getWindowProcessInformation='echo "Click on a window to get its process in
 alias findDuplicatesExcludingEmptyFiles="fdupes -n -R ."
 
 # List file extensions, from 1 to 5 characters, found recursively from the current directory, ignoring case
-alias listFileExtensionsIgnoreCase="find . -type f -regextype posix-extended -regex '.+\.[^.]{1,5}' | sed --regexp-extended 's/.+\.([^.]{1,5})/\1/g' | tr [:upper:] [:lower:] | sort -u"
+alias listFileExtensionsIgnoringCase="find . -type f -regextype posix-extended -regex '.+\.[^.]{1,5}' | sed --regexp-extended 's/.+\.([^.]{1,5})/\1/g' | tr [:upper:] [:lower:] | sort -u"
 
 # Delete empty directories found recursively from the current directory
 alias deleteEmptyDirectoriesRecursively="find . -type d -empty -delete"
