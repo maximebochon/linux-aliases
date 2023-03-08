@@ -22,4 +22,4 @@ alias disableBashExtendedPathnameExpansion="shopt -u extglob globstar"
 # - lower or upper case letters without accent ("a" to "z", "A" to "Z")
 # - digits ("0" to "9")
 # - underscore, dash, dot ("_", "-", ".")
-alias restrictCharactersInFileNames="rename 's/[^0-9a-zA-Z_\-\.]/_/g'"
+alias restrictCharactersInFileNames="rename --filename 's/[^0-9a-zA-Z_\-\.]/_/g'"
