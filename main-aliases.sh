@@ -23,3 +23,8 @@ alias disableBashExtendedPathnameExpansion="shopt -u extglob globstar"
 # - digits ("0" to "9")
 # - underscore, dash, dot ("_", "-", ".")
 alias restrictCharactersInFileNames="rename --filename 's/[^0-9a-zA-Z_\-\.]/_/g'"
+
+# Convert a text file from ISO-8859-1 to UTF-8 encoding, and the other way around
+# (does not work for several files at a time / `iso2utf *.txt` won't work)
+alias iso2utf="ex -sc '%!iconv --from-code=ISO-8859-1 --to-code=UTF-8' -cx"
+alias utf2iso="ex -sc '%!iconv --from-code=ISO-8859-1 --to-code=UTF-8' -cx"
