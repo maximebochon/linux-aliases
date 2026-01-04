@@ -13,6 +13,9 @@ alias listFileExtensionsIgnoringCase="find . -type f -name '*[!.]?.[!.]?[!.]*' -
 # Delete empty directories found recursively from the current directory
 alias deleteEmptyDirectoriesRecursively="find . -type d -empty -delete"
 
+# Erase the content of a file
+alias erase="truncate --no-create --size 0"
+
 # Enable or disable extended path name expansion (known as 'globbing') in Bash
 # Additional patterns are: ** ?(...) *(...) +(...) @(...) !(...) 
 alias enableBashExtendedPathnameExpansion="shopt -s extglob globstar"
